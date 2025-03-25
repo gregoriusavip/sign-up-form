@@ -7,7 +7,7 @@ main {
 }
 
 main>* {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .left {
@@ -29,7 +29,7 @@ main>* {
 
 .sign-up-cnt {
     background-color: white;
-    box-shadow: 1.5px 1.5px 2px #bbbebe;
+    box-shadow: 1.5px 1.5px 2px #dcdddd;
 }
 
 .sign-up-cnt h1 {

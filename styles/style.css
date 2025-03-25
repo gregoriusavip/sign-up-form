@@ -1,9 +1,44 @@
-html {
-    box-sizing: border-box;
+body {
+    background-image: url('../assets/peakpx.jpg');
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
+main {
+    display: flex;
+}
+
+main>* {
+    height: 100vh;
+}
+
+.left {
+    background-color: red;
+    width: 30vw;
+}
+
+.right {
+    background-color: grey;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right>* {
+    border: solid yellow;
+    padding: 2rem 15rem 2rem 2rem;
+}
+
+.sign-up {
+    display: grid;
+    grid-template-columns: repeat(2, clamp(15.5rem, 50%, 25rem));
+    column-gap: 1.5rem;
+}
+
+.sign-up>* {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up input {
+    width: clamp(15.5rem, 80%, 25rem);
 }

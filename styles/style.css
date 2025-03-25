@@ -16,7 +16,7 @@ main>* {
 }
 
 .right {
-    background-color: grey;
+    background-color: #f9fafb;
     width: 70vw;
     display: flex;
     flex-direction: column;
@@ -24,21 +24,48 @@ main>* {
 }
 
 .right>* {
-    border: solid yellow;
-    padding: 2rem 15rem 2rem 2rem;
+    padding: 1rem 15rem 2rem 2rem;
 }
 
-.sign-up {
+.sign-up-cnt {
+    background-color: white;
+    box-shadow: 1.5px 1.5px 2px #bbbebe;
+}
+
+.sign-up-cnt h1 {
+    padding-bottom: 1.5rem;
+}
+
+form.sign-up {
     display: grid;
-    grid-template-columns: repeat(2, clamp(15.5rem, 50%, 25rem));
+    grid-template-columns: repeat(2, clamp(15.5rem, 27%, 25rem));
     column-gap: 1.5rem;
+    row-gap: 1.25rem;
 }
 
-.sign-up>* {
+form.sign-up>* {
     display: flex;
     flex-direction: column;
 }
 
-.sign-up input {
-    width: clamp(15.5rem, 80%, 25rem);
+form.sign-up input {
+    width: clamp(15.5rem, 70%, 25rem);
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    outline-style: none;
+    box-shadow: none;
+    padding: 0.1em 0.8em;
+}
+
+form.sign-up input[type="password"]:invalid {
+    border-color: #da5d4d;
+}
+
+form.sign-up input[type="password"]:focus {
+    box-shadow: inset #ff0000;
+}
+
+form.sign-up input:focus {
+    border: 1.8px solid #1e8cc7;
+    box-shadow: inset #1e8cc7;
 }

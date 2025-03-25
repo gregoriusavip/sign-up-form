@@ -20,7 +20,7 @@
             </section>
             <section class="form">
                 <h1>Let's do this!</h1>
-                <form action="" method="post">
+                <form action="" method="post" id="sign-up-form">
                     <div>
                         <label for="first-name">FIRST NAME</label>
                         <input type="text" name="first-name" id="first_name" required />
@@ -50,12 +50,12 @@
                         <label for="pass_confirm">CONFIRM PASSWORD</label>
                         <input type="password" name="pass_confirm" id="pass_confirm" required />
                     </div>
-                    <div class="buttons-space">
-                        <button>Create Account</button>
-                        <p>Already have an account? <a href="">Log in</a></p>
-                    </div>
                 </form>
             </section>
+            <div class="button-cnt">
+                <button form="sign-up-form">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
         </div>
     </main>
 </body>

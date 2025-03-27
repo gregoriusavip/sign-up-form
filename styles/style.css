@@ -35,7 +35,7 @@ main>* {
 }
 
 .right>* {
-    padding: 1rem 15rem 2rem 2rem;
+    padding: 2rem 15rem 2rem 3rem;
 }
 
 .sign-up-cnt {
@@ -84,4 +84,31 @@ form.sign-up input:focus {
 form.sign-up label {
     font-size: 0.8rem;
     color: #3e4652;
+}
+
+.create-account-cnt button {
+    padding: 0.7rem 3.5rem;
+    margin-bottom: 2rem;
+
+    background-color: #596d48;
+    border: 2px none;
+    border-radius: 8px;
+    outline-style: none;
+    box-shadow: none;
+
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: transform .2s;
+}
+
+.create-account-cnt button:hover {
+    transform: scale(1.1);
+}
+
+.create-account-cnt p a {
+    text-decoration: none;
+    color: #596d48;
+    font-weight: bold;
 }

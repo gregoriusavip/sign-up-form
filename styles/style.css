@@ -33,7 +33,7 @@ main>* {
     flex-direction: row;
     background-image: url('../assets/peakpx.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .left div {
@@ -52,7 +52,10 @@ main>* {
 }
 
 .left img {
-    height: 9.5rem;
+    height: auto;
+    width: auto;
+    max-width: 250px;
+    max-height: 9.5rem;
     filter: grayscale(80%)
 }
 
